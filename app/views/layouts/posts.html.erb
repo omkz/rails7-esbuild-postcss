@@ -6,7 +6,8 @@
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
-    <%= stylesheet_link_tag "posts", "data-turbo-track": "reload" %>
+    <%= stylesheet_link_tag "posts" %>
+    <%# stylesheet_link_tag "posts", host: Rails.application.config.action_mailer.default_url_options[:host] %>
     <%= javascript_include_tag "application", "data-turbo-track": "reload", defer: true %>
   </head>
 
